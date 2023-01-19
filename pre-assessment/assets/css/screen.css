@@ -10,6 +10,7 @@ body {
 	font-size: 16px;
 	line-height: 1.5em;
 	background-image: url(https://thomaswallace.net/projects/pre-assessment/bg-tile.jpg);
+	background-repeat: repeat-x;
 }
 #container {
 	max-width: 800px;
@@ -21,8 +22,16 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
+
 }
 #header h1 a {
+	display: block;
+    padding: 140px 0 0 0;
+    overflow: hidden;
+    background-image: url(../resources/hero-with-name.jpg);
+    background-repeat: no-repeat;
+    height: 0px !important;
+    height :140px;
 }
 #nav {
 	background-color: #000;
@@ -65,10 +74,52 @@ body {
 	background-color: #000;
 	color: #FFF;
 	height: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 #footer h6 {
 	font-size: 12px;
 	line-height: 25px;
 	margin-right: 20px;
 	margin-left: 20px;
+}
+
+#footer h6 a {
+	color:white;
+}
+
+.alert {
+	background-color: lavender;
+	color:darkslateblue;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+h2 {
+	color: #0D0020;
+	text-transform: uppercase;
+}
+
+h3 {
+	color:#B83620;
+}
+
+h4 {
+	color: #DD5A26;
+	font-style: italic;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left:20px;
+	font-style: italic;
+}
+
+#content p a:hover {
+	color: #B0B7BC;
+	background-color: #0076B6;
 }
