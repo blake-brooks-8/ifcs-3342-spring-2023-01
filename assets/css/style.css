@@ -2,16 +2,93 @@
 * {
 	margin: 0px;
 	padding: 0px;
-    background: 
-      radial-gradient(circle at 50% 0,
-        rgba(255,0,0,.5),
-        rgba(255,0,0,0) 70.71%),
-      radial-gradient(circle at 6.7% 75%,
-        rgba(0,0,255,.5),
-        rgba(0,0,255,0) 70.71%),
-      radial-gradient(circle at 93.3% 75%,
-        rgba(0,255,0,.5),
-        rgba(0,255,0,0) 70.71%) beige;
-    border-radius: 50%;
+    font-family: 'Merriweather', serif;
+    color: #2F2E33;
 }
 
+li {
+    list-style: none;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    position:fixed;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+.hero {
+    background: linear-gradient(180deg, #FFB7B7 0%, #727272 100%), radial-gradient(60.91% 100% at 50% 0%, #FFD1D1 0%, #260000 100%), linear-gradient(238.72deg, #FFDDDD 0%, #720066 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+    background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
+    background-repeat: no-repeat;
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 15px 0 15px;
+}
+
+.hero div {
+    height:50px;
+    padding:15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.assignment-card {
+    background: rgba(255, 255, 255, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.8px);
+    -webkit-backdrop-filter: blur(14.8px);
+}
+
+.assignment-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    margin:0 !important;
+    text-align: start;
+}
+
+.assignment-desc p {
+    align-self: flex-start;
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+.prev-week {
+    background: rgba(157, 157, 157, 0.48)!important;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.8px);
+    -webkit-backdrop-filter: blur(14.8px);
+}
+
+.prev-week:hover {
+    cursor: not-allowed;
+}
+
+.prev-week h3 {
+    color:rgba(255, 255, 255, 0.48);
+}
+
+.prev-week p {
+    color:rgba(255, 255, 255, 0.48);
+}
