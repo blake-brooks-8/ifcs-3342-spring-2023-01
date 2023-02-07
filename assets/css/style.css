@@ -1,0 +1,7 @@
+/* This is resetting the margin and padding on every element in the DOM to 0 */
+* {
+	margin: 0px;
+	padding: 0px;
+    background-color: blueviolet;
+}
+
