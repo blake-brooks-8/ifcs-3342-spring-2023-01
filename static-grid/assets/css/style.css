@@ -1,0 +1,43 @@
+main {  
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 30px 30px; 
+    grid-template-areas: 
+      "header header header"
+      "blog blog sidebar"
+      "blog blog sidebar"
+      "blog blog sidebar"
+      "footer footer footer"; 
+    padding:15px;
+    border:1px solid black
+}
+
+body {
+    padding:20px;
+}
+
+header.primary { 
+    grid-area: header; 
+    background-color: grey;
+    padding:15px;
+}
+  
+aside.sidebar { 
+    grid-area: sidebar; 
+    background-color: grey;
+    padding:15px;
+}
+  
+#blog { 
+    grid-area: blog;
+    background-color: grey;
+    padding:15px;
+}
+  
+footer.primary { 
+    grid-area: footer;
+    background-color: grey;
+    padding:15px;
+    height:50px;
+}
