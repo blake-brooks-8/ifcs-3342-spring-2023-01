@@ -1,0 +1,202 @@
+:root {
+    --clr-primary: #CB5224;
+    --clr-dark: #412E28;
+    --clr-white: #FFF2EC;
+    --radius-light: 5px;
+    --radius-heavy: 50px;
+}
+
+/* background-color: var(--main-bg-color); */
+
+html {
+    font-family: 'Merriweather', serif;
+    background-color: var(--clr-white);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid var(--clr-dark);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    text-transform: uppercase;
+    color: var(--clr-primary);
+    margin-right:20px;
+}
+
+section#hero {
+    display:flex;
+    flex-direction: column;
+    padding: 35px;
+    width:400px;
+    margin:auto;
+}
+
+img.logo-big {
+    width: 300px;
+    margin-left: -15px;
+}
+
+h4 {
+    color: var(--clr-primary);
+    font-weight: 200;
+}
+
+.site-step {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--clr-dark);
+}
+
+.site-step:first-of-type {
+    border-top: 1px solid var(--clr-dark);
+}
+
+p.number-heading {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+#hero p {
+    font-style: italic;
+}
+
+.sharp-oval {
+    border-radius: 200px;
+}
+
+.hero-image {
+    position: absolute;
+    width:375px;
+    margin:auto;
+    z-index: -1;
+    opacity: .10;
+    margin-top: -20px;
+}
+
+#pricing {
+    background-image: url("/assets/img/brandon-and-sarah-slim.png");
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top:50px;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-direction: column;
+    padding-top:50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.label {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--clr-dark);
+}
+
+.label h4 {
+    font-size: 1.5rem;
+}
+
+.label p {
+    padding:0;
+    margin:0;
+}
+
+.pricing-card {
+    height: 150px;
+    background-color: var(--clr-white);
+    border-radius: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.pricing-descriptions {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.pricing-description {
+    margin-bottom: 15px;
+}
+
+#previous-work h3 {
+    font-size: 3rem !important;
+    text-transform: capitalize;
+    font-style: italic;
+    color: var(--clr-primary);
+    font-weight: bold;
+    text-align: center;
+}
+
+.left-column, .right-column, .middle-column {
+    display: flex;
+    flex-direction: column;
+    width:27.5%;
+}
+
+.left-column {
+    margin-top: -25px;
+}
+
+.right-column {
+    margin-top: -40px;
+}
+
+.middle-column {
+    margin-top: 50px;
+}
+
+.gallery {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.gallery-img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 70px;
+}
+
+textarea {
+    width: 100%;
+}
+
+#contact {
+    background-color: var(--clr-primary);
+    padding: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+}
