@@ -1,5 +1,5 @@
 :root {
-    --clr-primary: #CB5224;
+    --clr-primary: blue;
     --clr-dark: #412E28;
     --clr-white: #FFF2EC;
     --radius-light: 5px;
@@ -44,13 +44,13 @@ section#hero {
     display:flex;
     flex-direction: column;
     padding: 35px;
-    width: 100px;
+    width: 300px;
     margin:auto;
 }
 
 img.logo-big {
     width:100%;
-    max-width: 100px;
+    max-width: 300px;
     margin-left: -15px;
 }
 
@@ -79,12 +79,12 @@ p.number-heading {
 }
 
 .sharp-oval {
-    border-radius: 25%;
+    border-radius: 45%;
 }
 
 .hero-image {
     position: absolute;
-    max-width:100px;
+    max-width:350px;
     margin:auto;
     z-index: -1;
     opacity: .10;
@@ -208,8 +208,7 @@ input {
 
 @media only screen and (max-width: 449px) {
     section#hero {
-        width: 300px;
-        background-color: blue;
+        width: 250px;
     }
 
     img.logo-big {
@@ -242,5 +241,5 @@ input {
 
     .hero-image {
 
-    }
+    }  
 }
