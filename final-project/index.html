@@ -15,8 +15,8 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -29,27 +29,29 @@
             <img src="assets/img/logo.png" alt="Swearingen Weddings">
         </div>
         <div class="menu-items">
-            <div class="menu-item">pricing</div>
-            <div class="menu-item">photos</div>
-            <div class="menu-item">contact</div>
+            <a href="#pricing"><div class="menu-item">pricing</div></a>
+            <a href="#previous-work"><div class="menu-item">photos</div></a>
+            <a href="#contact"><div class="menu-item">contact</div></a>
         </div>
     </nav>
     <main>
         <section id="hero">
-            <img src="assets/img/logo-with-subhead.png" alt="Swearingen Weddings" class="logo-big">
-            <h4>Looking for a wedding video or wedding photos? Nice to meet you!</h2>
-            <div class="site-steps">    
-                <div class="site-step">
-                    <p class="number-heading">1.</p>
-                    <p class="step-description">Take a peek at our gallery and see some of our work</p>
-                </div>
-                <div class="site-step">
-                    <p class="number-heading">2.</p>
-                    <p class="step-description">Explore our packages and see how much you can expect to invest</p>
-                </div>
-                <div class="site-step">
-                    <p class="number-heading">3.</p>
-                    <p class="step-description">Contact us to see if we are available on your wedding day</p>
+            <div class="hero-text-content">
+                <img src="assets/img/logo-with-subhead.png" alt="Swearingen Weddings" class="logo-big">
+                <h4>Looking for a wedding video or wedding photos? Nice to meet you!</h2>
+                <div class="site-steps">    
+                    <div class="site-step">
+                        <p class="number-heading">1.</p>
+                        <p class="step-description">Take a peek at our gallery and see some of our work</p>
+                    </div>
+                    <div class="site-step">
+                        <p class="number-heading">2.</p>
+                        <p class="step-description">Explore our packages and see how much you can expect to invest</p>
+                    </div>
+                    <div class="site-step">
+                        <p class="number-heading">3.</p>
+                        <p class="step-description">Contact us to see if we are available on your wedding day</p>
+                    </div>
                 </div>
             </div>
             <img class="hero-image sharp-oval" src="assets/img/cold-springs.jpg" alt="Hero Image">
@@ -114,11 +116,27 @@
         <section id="contact">
             <h3>Shoot us a note</h3>
             <form action="" method="post">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <textarea name="additional-info"></textarea>
+                <div class="input-grouping">
+                    <label for="first">First Name</label>
+                    <input placeholder="John..." name="firstName" type="text">
+                </div>
+                <div class="input-grouping">
+                    <label for="lastName">Last Name</label>
+                    <input placeholder="Doe..." name="lastName" type="text">
+                </div>
+                <div class="input-grouping">
+                    <label for="emailAddress">Email Address</label>
+                    <input placeholder="jdoe@email.com" name="emailAddress" type="text">
+                </div>
+                <div class="input-grouping">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input placeholder="555-555-5555" name="phoneNumber" type="text">
+                </div>
+                <div class="text-area-grouping">
+                    <label for="additional-info">Additional Info</label>
+                    <textarea placeholder="We think you guys are so awesome and would love to do business with y'all... or something like that..." name="additional-info"></textarea>
+                </div>
+                <button type="submit">Submit</button>
             </form>
         </section>
     </main>

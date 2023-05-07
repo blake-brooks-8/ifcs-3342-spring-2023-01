@@ -1,9 +1,13 @@
 :root {
-    --clr-primary: blue;
+    --clr-primary: #cb5425;
     --clr-dark: #412E28;
     --clr-white: #FFF2EC;
     --radius-light: 5px;
     --radius-heavy: 50px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* background-color: var(--main-bg-color); */
@@ -11,6 +15,8 @@
 html {
     font-family: 'Merriweather', serif;
     background-color: var(--clr-white);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 nav {
@@ -79,7 +85,7 @@ p.number-heading {
 }
 
 .sharp-oval {
-    border-radius: 45%;
+    border-radius: 35%;
 }
 
 .hero-image {
@@ -184,7 +190,12 @@ p.number-heading {
 }
 
 textarea {
-    width: 100%;
+    max-width: 100%;
+    background-color: var(--clr-white);
+    border-radius:5px;
+    min-height:50px;
+    padding:15px;
+    margin-bottom: 15px;
 }
 
 #contact {
@@ -195,51 +206,220 @@ textarea {
 form {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    margin: 10px 0;
+    width:100%;
+    align-items: space-evenly;
+    min-height:350px;
 }
 
 input {
     display:block;
     float:left;
-    width: fit-content;
+    max-width: 100%;
+    padding:15px;
     margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: var(--clr-white);
+    border:none;
+}
+
+input:focus {
+    outline: 3px solid var(--clr-dark);
+}
+
+#contact h3 {
+    color:var(--clr-white);
+    font-size: 2rem;
+    margin-top:5px;
+    text-align:center;
+}
+
+.input-grouping  {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.text-area-grouping {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px; 
+    color:var(--clr-white);
+}
+
+button[type="submit"] {
+    max-width: 100%;
+    padding:15px;
+    background-color: var(--clr-primary);
+    border:2px solid var(--clr-white);
+    border-radius: 5px;
+    color:var(--clr-white);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-primary);
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 449px) {
     section#hero {
         width: 250px;
+        padding: 35px 15px 15px 15px;
     }
 
     img.logo-big {
         width:250px;
     }
 
-    h4 {
+    .hero-image {
+        margin-right:15px;
+        margin-left:-15px;
+    }  
 
+    .pricing-card {
+        height: 300px;  
     }
 
-    .site-step {
+    #pricing {
+        height:1100px;
+    }
+}
 
+/*tablet*/
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+    .hero-image {
+        position: relative;
+        max-width:350px;
+        margin:auto;
+        z-index: -1;
+        opacity:100;
+        margin-top: -20px;
+        margin-left: 20px;
     }
 
-    .site-step:first-of-type {
-
+    section#hero {
+        width: 100%;
+        max-width: 600px;
+        flex-direction:row;
+        align-items: space-between;
     }
 
-    p.number-heading {
-
+    .hero-text-content {
+        margin-right: 20px;
     }
 
-    #hero p {
+    #pricing {
+        background-image: url("/assets/img/brandon-and-sarah-tablet.png");
+        height: 600px;
+    }
+    
+    .pricing-cards {
+        padding-top:0px;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        height:inherit;
+        width: 50%;
+    }
+    .sharp-oval {
+        border-radius: 200px;
+    }
 
+    .pricing-card:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #previous-work {
+        display:flex;
+        flex-direction:row;
+        margin-top: 50px;
+    }
+
+    #previous-work h3 {
+        writing-mode: vertical-rl;
+        margin-top: -50px;
+    }
+}
+/* desktop */
+@media only screen and (min-width: 1001px) {
+    .hero-image {
+        position: relative;
+        max-width:350px;
+        margin:auto;
+        z-index: -1;
+        opacity:100;
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+
+    section#hero {
+        width: 100%;
+        max-width: 800px;
+        flex-direction:row;
+        align-items: space-between;
+    }
+
+    .hero-text-content {
+        margin-right: 20px;
+        width:50%;
+    }
+
+    #pricing {
+        background-image: url("/assets/img/brandon-and-sarah-dt.png");
+        height: 600px;
+    }
+
+    .pricing-cards {
+        padding-top:0px;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        height:inherit;
+        width: 50%;
+    }
+
+    .pricing-card:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #previous-work {
+        display:flex;
+        flex-direction:row;
+        margin-top: 50px;
     }
 
     .sharp-oval {
-
+        border-radius: 200px;
     }
 
-    .hero-image {
+    .gallery-img {
+        border-radius: 200px;
+    }
 
-    }  
+    #previous-work h3 {
+        text-align: left;
+        align-self: center;
+        margin-left: 45px;
+    }
+
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .input-grouping {
+        width: 50%;
+    }
+
+    input[name="firstName"], input[name="emailAddress"]{
+        margin-right: 15px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
 }
