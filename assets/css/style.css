@@ -1,9 +1,13 @@
 /* This is resetting the margin and padding on every element in the DOM to 0 */
+:root {
+    --clr-primary: #2F2E33;
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
     font-family: 'Merriweather', serif;
-    color: #2F2E33;
+    color: var(--clr-primary);
 }
 
 li {

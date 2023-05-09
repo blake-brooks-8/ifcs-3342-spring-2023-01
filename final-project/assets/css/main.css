@@ -166,6 +166,10 @@ p.number-heading {
     width:27.5%;
 }
 
+.column-wrapper {
+    overflow:hidden;
+}
+
 .left-column {
     margin-top: -25px;
 }
